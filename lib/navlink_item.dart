@@ -5,8 +5,7 @@ class NavLinkItem extends StatefulWidget {
   final String title;
   final VoidCallback onTap;
 
-  const NavLinkItem({Key? key, required this.title, required this.onTap})
-    : super(key: key);
+  const NavLinkItem({super.key, required this.title, required this.onTap});
 
   @override
   State<NavLinkItem> createState() => _NavLinkItemState();
