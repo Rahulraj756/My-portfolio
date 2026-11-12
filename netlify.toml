@@ -1,0 +1,9 @@
+[build]
+  command = "bash netlify-build.sh"
+  publish = "build/web"
+
+# Serve index.html for any route so Flutter web routing works on refresh/deep links.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
